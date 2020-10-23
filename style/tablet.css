@@ -1,0 +1,52 @@
+header h1 {
+    font-size:7vw;
+}
+.navContainer .navItem {
+    padding:2% 3%;
+    margin:1% 0;
+    font-size:3.5vw;
+    font-weight:bold;
+}
+div.flexContainer div.homeItems {
+    width:85%;
+    height:45%;
+    background-color:rgb(65, 60, 60);
+    border:solid 0.2rem black;
+    margin:2%;
+}
+figcaption {
+    font-size:3.2vw;
+}
+figcaption:hover {
+    font-size:3.2vw;
+}
+div.flexContainer div.item2 {
+    /* font-size:2.5vw; */
+    background-color:white;
+    border:none;
+    margin:2%;
+    height:45%;
+    width:85%;
+}
+div.item2 h3 {
+    margin:10% 0;
+    font-size:4.5vw;
+}
+div.item2 a {
+    font-size:4vw;
+    padding:5% 20%;
+}
+div.item2 h3:hover {
+    border:solid 0.2rem rgb(30, 255, 161);
+    text-transform:uppercase;
+}
+div.item2 p {
+    margin:10% 0%;
+    font-size:3.5vw;
+}
+footer .foot1 {
+    width:auto;
+}
+footer p, footer h3, footer a, footer .fa {
+    font-size:4vw;
+}

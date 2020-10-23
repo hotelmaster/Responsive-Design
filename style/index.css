@@ -1,0 +1,322 @@
+/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* My CSS begins below the reset ************************************************* */
+
+html {
+    font-size:62.5%;
+}
+body {
+    border:solid 0.2rem black;
+    margin:0 15%;
+}
+header {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    border-bottom:solid 0.2rem black;
+    height:15%;
+    background-color:grey;
+}
+header h1 {
+    border-bottom:solid rgb(54, 53, 53) 2px;
+    font-size:4vw;
+    height:45%;
+    padding:2rem 0;
+}
+header h1:hover {
+    text-transform:lowercase;
+}
+header nav.navContainer {
+    display:flex;
+    justify-content:flex-start;
+    height:25%;
+    width:auto;
+    padding:2rem 0;
+}
+header nav.navContainer a {
+    margin-right:2%;
+    padding:0.5rem 1.5rem;
+    border:0.2rem solid black;
+    background-color:rgb(30, 255, 161);
+    color:black;
+    text-decoration:none;
+    font-size:2vw;
+}
+header nav.navContainer a:hover {
+    font-style:italic;
+    font-weight:bold;
+    background-color:black;
+    color:white;
+    text-decoration:italics;
+}
+/* header h3 {
+    height:25%;
+    font-size:1.5vw;
+}
+header h3:hover {
+    background-color:rgb(65, 60, 60);
+    color:white;
+} */
+div.flexContainer {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-content:space-evenly;
+    width:100%;
+    height:80%;
+    margin:5% 0;
+}
+div.flexContainer div.homeItems {
+    width:40%;
+    height:40%;
+    background-color:rgb(65, 60, 60);
+    border:solid 0.2rem black;
+    margin:1rem;
+}
+div.flexContainer div.item1 {
+    width:40%;
+    height:auto;
+}
+div.flexContainer div.item2 {
+    font-size:1.6rem;
+    background-color:white;
+    border:none;
+    margin:1rem;
+    height:auto;
+}
+div.item2 h3 {
+    margin:10% 10%;
+    font-size:2vw;
+}
+div.item2 h3:hover {
+    border:solid 0.2rem rgb(30, 255, 161);
+    text-transform:uppercase;
+}
+div.item2 p {
+    margin:10% 10%;
+    font-size:1.5vw;
+} 
+div.item2 p:hover {
+    border:dashed 0.2rem rgb(30, 255, 161);
+    padding:5%;
+}
+div.item2 a {
+    border:solid 0.2rem black;
+    margin:10% 10%;
+    padding:5% 10%;
+    text-decoration:none;
+    color:white;
+    background-color:black;
+    font-size:1.5vw;
+    /* background-color:rgb(30, 255, 161); */
+}
+div.item2 a:hover {
+    font-weight:bold;
+    background-color:white;
+    color:black;
+    border:solid 0.2rem rgb(30, 255, 161);
+}
+#changeImgSize {
+    height:86%;
+    width:90%;
+}
+figcaption {
+    font-size:1vw;
+    color:white;padding:1rem;
+}
+figcaption:hover {
+    font-size:1.6vw;
+    color:white;
+    font-weight:bold;
+    background-color:rgb(30, 255, 161);
+}
+.flexContainer .item3, .flexContainer .item4, 
+.flexContainer .item5, .flexContainer .item6 {
+    height:10vh;
+} 
+footer {
+    display:flex; 
+    justify-content:space-evenly;
+    border:solid 0.2rem black;
+    height:10%;
+    font-size:1vw;
+    background-color:rgb(133, 128, 128);
+}
+footer .foot1 { 
+    width:30%;
+    height:30%;
+    font-size:1.6vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    padding:3% 0;
+}
+footer .foot1:hover {
+    background-color:rgb(68, 62, 62);
+}
+footer p {
+    margin:1rem;
+    text-align:center;
+    /* font-size:1.2vw; */
+    font-size:100%;
+    color:white;
+}
+footer h3 {
+    margin:1rem;
+    text-align:center;
+    /* font-size:1.2vw; */
+    font-size:100%;
+    color:white;
+}
+footer h3:hover, footer p:hover {
+    border-bottom:0.2rem solid white;
+}
+footer a {
+    padding:1rem 1rem;
+    margin:1rem 1rem;
+    border:0.2rem solid black;
+    background-color:rgb(30, 255, 161);
+    text-decoration:none;
+    color:rgb(61, 61, 61);
+}
+footer a:hover {
+    background-color:white;
+    color:black;
+}
+#fa-linkedin {
+    background: #007bb5;
+    color: white;
+    margin:1rem;
+}
+.fa {
+    padding: 1rem;
+    font-size: 3rem;
+    /* width: 18rem; */
+    width:80%;
+    text-align: center;
+    text-decoration: none;
+    margin:1rem;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.foot1 a.contactBtn {
+    text-align:center;
+    width:80%;
+}
+
+/* @media (max-width:500px)  {
+
+    header h1 {
+        font-size:80%;
+    }
+
+    .navContainer {
+        display:flex;
+        flex-direction:column;
+    }
+    .navContainer .navItem {
+        padding:2% 3%;
+        margin:1% 0;
+        font-size:3vw;
+        font-weight:bold;
+    }
+
+    div.flexContainer {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-content:space-evenly;
+        width:100%;
+        height:100%;
+        margin:5% 2%;
+    }
+    div.flexContainer div.homeItems {
+        width:80%;
+        height:40%;
+        background-color:rgb(65, 60, 60);
+        border:solid 0.2rem black;
+        margin:2%;
+    }
+    figcaption {
+        font-size:3vw;
+    }
+    figcaption:hover {
+        font-size:3vw;
+    }
+    div.flexContainer div.item2 {
+        background-color:white;
+        border:none;
+        margin:2%;
+        height:40%;
+        width:80%;
+    }
+    div.item2 h3 {
+        margin:10% 10%;
+        font-size:3vw;
+    }
+    div.item2 a {
+        font-size:3vw;
+    }
+    div.item2 h3:hover {
+        border:solid 0.2rem rgb(30, 255, 161);
+        text-transform:uppercase;
+    }
+    div.item2 p {
+        margin:10% 10%;
+        font-size:3vw;
+    }
+    footer .foot1 {
+        width:auto;
+    }
+    footer p, footer h3, footer a, footer .fa {
+        font-size:3vw;
+    }
+} */
